@@ -1,3 +1,15 @@
+.formWrapper {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;

@@ -31,6 +31,7 @@ function EditCardPage() {
 
   const [validationErrors, setValidationErrors] = useState<string[]>([]);
   const [selectedOption, setSelectedoption] = useState<SelectedOption | null>();
+
   const [formValues, setFormValues] = useState<Omit<RocketCard, "id">>({
     title: currentRocket!.title,
     name: currentRocket!.name,
@@ -52,13 +53,12 @@ function EditCardPage() {
     [validationErrors]
   );
 
-  const handleChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = event.target;
-      setFormValues({ ...formValues, [name]: value });
-    },
-    [formValues]
-  );
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const handleSelectChange = (selectedOption: SelectedOption) => {
     setSelectedoption(selectedOption);
@@ -77,22 +77,18 @@ function EditCardPage() {
   };
 
   return (
-    <>
-      {" "}
+    <div className={styles.formWrapper}>
       <div className={styles.header}>
         <h3 className={styles.title}>Edit Rocket</h3>
         <BsStars
-          className="fs-2 text-danger fw-bold"
           size={30}
           style={{ color: "#ffe923" }}
         />
         <IoRocketSharp
-          className="fs-2 text-danger fw-bold"
           size={30}
           style={{ color: "#37d69c", margin: "0 8px" }}
         />
         <BsStars
-          className="fs-2 text-danger fw-bold"
           size={30}
           style={{ color: "#ffe923" }}
         />
@@ -144,7 +140,7 @@ function EditCardPage() {
         <Button type="submit">Submit</Button>
         <ToastContainer />
       </form>
-    </>
+    </div>
   );
 }
 

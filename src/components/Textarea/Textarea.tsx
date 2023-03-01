@@ -11,7 +11,10 @@ interface TextareaProps {
   ) => void;
 }
 
-const Textarea: React.FC<TextareaProps> = ({ title, ...rest }: TextareaProps) => {
+const Textarea: React.FC<TextareaProps> = ({
+  title,
+  ...rest
+}: TextareaProps) => {
   return (
     <div className={styles.wrapper}>
       {title && <label className={styles.label}>{title}</label>}

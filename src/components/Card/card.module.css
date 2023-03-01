@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -28,6 +28,11 @@
   font-weight: bold;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .deleteButton {
   background: none;
   border: none;
@@ -40,31 +45,9 @@
   margin-bottom: 6px;
 }
 
-.image {
-  width: 20%;
-  height: auto;
-  margin-right: 8px;
-  border-radius: 50%;
-}
-
 .details {
   padding: 10px;
   width: 70%;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.githubProfile {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-}
-
-.githubLink {
-  color: var(--color-accent);
 }
 
 .truncate {
@@ -91,4 +74,21 @@
   color: var(--color-background);
   background: var(--color-success);
   padding: 12px;
+}
+
+.image {
+  width: 20%;
+  height: auto;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.githubProfile {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.githubLink {
+  color: var(--color-accent);
 }

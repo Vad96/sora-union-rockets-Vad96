@@ -1,7 +1,19 @@
+.formWrapper {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+  margin: 24px 0;
 }
 
 .title {
@@ -14,7 +26,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 450px;
-  margin-top: 24px;
   padding: 12px 18px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

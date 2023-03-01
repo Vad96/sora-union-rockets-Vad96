@@ -36,7 +36,7 @@ function HomePage() {
       </div>
       {!rocketsList.length ? (
         <h2 className={styles.emptyList}>
-          Cards list is empty. Don't worry, you can add as much as you want
+          Cards list is empty. But you can add as much as you want
         </h2>
       ) : (
         <div className={styles.cardsList}>

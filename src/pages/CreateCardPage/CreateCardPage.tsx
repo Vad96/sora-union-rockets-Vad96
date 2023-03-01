@@ -45,13 +45,12 @@ function CreateCardPage() {
     [validationErrors]
   );
 
-  const handleChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = event.target;
-      setFormValues({ ...formValues, [name]: value });
-    },
-    [formValues]
-  );
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const handleSelectChange = (selectedOption: SelectedOption | null) => {
     setSelectedoption(selectedOption);
@@ -77,24 +76,15 @@ function CreateCardPage() {
   };
 
   return (
-    <>
+    <div className={styles.formWrapper}>
       <div className={styles.header}>
         <h3 className={styles.title}>New Rocket</h3>
-        <BsStars
-          className="fs-2 text-danger fw-bold"
-          size={30}
-          style={{ color: "#ffe923" }}
-        />
+        <BsStars size={30} style={{ color: "#ffe923" }} />
         <IoRocketSharp
-          className="fs-2 text-danger fw-bold"
           size={30}
           style={{ color: "#f34747", margin: "0 8px" }}
         />
-        <BsStars
-          className="fs-2 text-danger fw-bold"
-          size={30}
-          style={{ color: "#ffe923" }}
-        />
+        <BsStars size={30} style={{ color: "#ffe923" }} />
       </div>
 
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -139,7 +129,7 @@ function CreateCardPage() {
         <Button type="submit">Submit</Button>
         <ToastContainer />
       </form>
-    </>
+    </div>
   );
 }
 
