@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+}
+
+.cardsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-top: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .cardsList  {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.cardsAdd {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.emptyList {
+    color: var(--color-danger);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.headerText {
+    margin-left: 8px;
+}

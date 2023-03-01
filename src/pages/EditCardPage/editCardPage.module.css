@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.title {
+  margin-right: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 450px;
+  margin-top: 24px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.select {
+  width: 100%;
+}
+
+.takenName {
+  color: var(--color-danger);
+  margin-right: auto;
+}

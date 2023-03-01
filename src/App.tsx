@@ -1,7 +1,10 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./components";
+import { HomePage } from "./pages";
 import { Loader } from "./components"
+const CreateCardPage = React.lazy(() => import("./pages/CreateCardPage/CreateCardPage"));
+const EditCardPage = React.lazy(() => import("./pages/EditCardPage/EditCardPage"));
 
 function App(): JSX.Element {
   return (
@@ -9,12 +12,12 @@ function App(): JSX.Element {
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/" element={<div>Home</div>} />
+          <Route path="/" element={<HomePage />} />
           <Route
             path="/create"
             element={
               <Suspense fallback={<Loader />}>
-                <div>Create</div>
+                <CreateCardPage />
               </Suspense>
             }
           />
@@ -22,7 +25,7 @@ function App(): JSX.Element {
             path="/edit/:id"
             element={
               <Suspense fallback={<Loader />}>
-                <div>Edit</div>
+                <EditCardPage />
               </Suspense>
             }
           />
