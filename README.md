@@ -1,5 +1,5 @@
 # Sora Union frontend home challenge
-image.png
+![image](https://user-images.githubusercontent.com/42064923/222237156-9e58852d-3d8c-4f71-9e3f-e404fb2b216c.png)
 
 # Demo
 https://zippy-lebkuchen-7c43d7.netlify.app/
