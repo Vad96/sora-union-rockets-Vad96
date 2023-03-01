@@ -1,0 +1,38 @@
+.label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.success {
+  border: 1px solid var(--color-border);
+}
+
+.success:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.error {
+  border: 1px solid var(--color-danger);
+  outline: var(--color-danger);
+}
+
+.error:focus {
+  outline: 2px solid var(--color-danger);
+}
+
+.errorMessage {
+  display: block;
+  color: var(--color-danger);
+}

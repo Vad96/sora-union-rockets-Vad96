@@ -1,0 +1,94 @@
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: var(--color-background);
+  border-right: 1px solid var(--color-border);
+  border-radius: 12px 0 0 12px;
+  background: var(--color-accent);
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.cardName {
+  color: var(--color-border);
+  margin-bottom: 6px;
+}
+
+.image {
+  width: 20%;
+  height: auto;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.details {
+  padding: 10px;
+  width: 70%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.githubProfile {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.githubLink {
+  color: var(--color-accent);
+}
+
+.truncate {
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tooltip {
+  display: none;
+}
+
+.descriptionContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.descriptionContainer:hover > .tooltip {
+  display: block;
+  border: 1px solid;
+  border-radius: 16px;
+  position: absolute;
+  color: var(--color-background);
+  background: var(--color-success);
+  padding: 12px;
+}
