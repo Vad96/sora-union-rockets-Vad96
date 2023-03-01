@@ -4,6 +4,9 @@
 # Demo
 https://zippy-lebkuchen-7c43d7.netlify.app/
 
+# Few words
+In this project, Error Boundaries, various optimizations, numerous loaders, etc. could also be added. However, in terms of optimization, it would be excessive for such a project because everything is already working quickly. Therefore, some optimization added by me in certain places is more for demonstration purposes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
