@@ -36,4 +36,4 @@ const loadOptions = async (inputValue: string) => {
   return normalizeUsersSelectData(data.items);
 };
 
-export const debounceLoadOptions = debounce(loadOptions, 100);
+export const debounceLoadOptions = debounce(loadOptions, 400);
