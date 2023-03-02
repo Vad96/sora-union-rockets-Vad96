@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/42064923/222237156-9e58852d-3d8c-4f71-9e3f-e404fb2b216c.png)
 
 # Demo
-https://zippy-lebkuchen-7c43d7.netlify.app/
+https://sora-union-rockets-vad96.vercel.app/
 
 # Few words
 In this project, Error Boundaries, various optimizations, numerous loaders, etc. could also be added. However, in terms of optimization, it would be excessive for such a project because everything is already working quickly. Therefore, some optimization added by me in certain places is more for demonstration purposes.
