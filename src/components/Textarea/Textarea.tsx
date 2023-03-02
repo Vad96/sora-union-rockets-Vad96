@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from "react";
 import styles from "./textarea.module.css";
 
-interface TextareaProps {
+type TextareaProps = {
   title?: string;
   value: string;
   placeholder?: string;

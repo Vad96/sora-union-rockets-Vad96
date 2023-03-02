@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./components";
 import { HomePage } from "./pages";
 import { Loader } from "./components"
-const CreateCardPage = React.lazy(() => import("./pages/CreateCardPage/CreateCardPage"));
-const EditCardPage = React.lazy(() => import("./pages/EditCardPage/EditCardPage"));
+const CreateCardPage = React.lazy(() => import("./pages/CardPage/CreateCardPage/CreateCardPage"));
+const EditCardPage = React.lazy(() => import("./pages/CardPage/EditCardPage/EditCardPage"));
 
 function App(): JSX.Element {
   return (

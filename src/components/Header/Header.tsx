@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import { BsGithub} from "react-icons/bs";
 
-function Header(): JSX.Element {
+const Header = (): JSX.Element =>  {
   return (
     <>
       <header className={styles.header}>

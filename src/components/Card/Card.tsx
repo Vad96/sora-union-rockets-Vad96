@@ -4,7 +4,7 @@ import styles from "./card.module.css";
 import { AiTwotoneDelete } from "react-icons/ai";
 import { GrEdit } from "react-icons/gr";
 
-interface CardProps {
+type CardProps = {
   title: string;
   description: string;
   imageUrl: string;
