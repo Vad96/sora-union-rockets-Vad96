@@ -27,16 +27,12 @@ export const useEditCardData = () => {
     user: currentRocket!.user,
   });
 
-  const localActions = useMemo(() => {
-    return {
+  return {
+    localActions: {
       setValidationErrors,
       setSelectedoption,
       setFormValues,
-    };
-  }, []);
-
-  return {
-    localActions,
+    },
     localState: {
       currentRocket,
       validationErrors,

@@ -19,16 +19,12 @@ export const useCreateCardData = () => {
     user: null,
   });
 
-  const localActions = useMemo(() => {
-    return {
+  return {
+    localActions: {
       setValidationErrors,
       setSelectedoption,
       setFormValues,
-    };
-  }, []);
-
-  return {
-    localActions,
+    },
     localState: {
       validationErrors,
       selectedOption,
